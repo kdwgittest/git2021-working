@@ -1,0 +1,72 @@
+<html lang="ko">
+
+<head>
+
+  <Meta charset="utf-8">
+
+  <style>
+    p {
+      width: 250px;
+      height: 150px;
+      border: 3px solid black;
+    }
+
+
+    p:nth-child(1) {
+      /*요소(element)의 크기보다 컨텐츠가 클 때 숨김처리*/
+      overflow: hidden;
+      /*높이값 하나도 안주면 자동으로 알아서 늘어남*/
+    }
+
+    p:nth-child(2) {
+      overflow: scroll;
+    }
+
+    p:nth-child(3) {
+      overflow-y: scroll;
+      /* y축만 스크롤 */
+    }
+
+    p:nth-child(4) {
+      overflow-y: auto;
+      /* 자동임. 적으면 스크롤 안생김. 공간 넘치면 스크롤 생김. */
+    }
+
+    p:nth-child(5) {
+      overflow: hidden;
+      /* 컨텐츠가 내용 밖으로 넘어서면 말 줄임(....)*/
+      text-overflow: ellipsis;
+      /* 빈공간은 기본적으로 밑으로 내림 */
+      /* 밑으로 안내리고 옆으로 이어짐 */
+      white-space: nowrap;
+      height: 25px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam tenetur minus fuga ipsam, quas dignissimos dolor
+    nisi pariatur ducimus recusandae repellendus! Rerum exercitationem quo doloribus commodi velit! Eos, ea numquam?</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam tenetur minus fuga ipsam, quas dignissimos dolor
+    nisi pariatur ducimus recusandae repellendus! Rerum exercitationem quo doloribus commodi velit! Eos, ea numquam?</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam tenetur minus fuga ipsam, quas dignissimos dolor
+    Eos, ea numquam?</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam tenetur minus fuga ipsam, quas dignissimos dolor
+    Eos, ea numquam?</p>
+  <p title="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam tenetur minus fuga ipsam, quas
+  dignissimos dolor
+  nisi pariatur ducimus recusandae repellendus! Rerum exercitationem quo doloribus commodi velit! Eos, ea numquam?">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam tenetur minus fuga ipsam, quas
+    dignissimos dolor
+    nisi pariatur ducimus recusandae repellendus! Rerum exercitationem quo doloribus commodi velit! Eos, ea numquam?</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam tenetur minus fuga ipsam, quas dignissimos dolor
+    nisi pariatur ducimus recusandae repellendus! Rerum exercitationem quo doloribus commodi velit! Eos, ea numquam?</p>
+
+
+</body>
+
+
+
+
+</html>

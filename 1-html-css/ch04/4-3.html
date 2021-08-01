@@ -1,0 +1,61 @@
+<html lang="ko">
+
+<head>
+
+  <Meta charset="utf-8">
+
+  <style>
+    body {
+      height: 2000px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+
+      position: absolute;
+    }
+
+    .red {
+      background-color: red;
+      left: 10px;
+      top: 10px;
+    }
+
+    .green {
+      background-color: green;
+      left: 50px;
+      top: 50px;
+    }
+
+    .blue {
+      background-color: blue;
+      left: 90px;
+      top: 90px;
+    }
+
+    .wrapper {
+      position: relative;
+      /*기준점을 부모위치로 변경*/
+      border: 1px solid black;
+      /* 자식 요소가 absolute 이면 컨텐츠 높이 길이가 사라짐. 그래서 높이값 따로 줘야된다. */
+      height: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>고정 위치입니다.</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo similique facere commodi voluptatem, quae debitis
+    voluptas eaque blanditiis eius animi tenetur sequi harum enim, cumque quos, illum inventore ea earum!</p>
+  <div class="wrapper">
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+  </div>
+</body>
+
+
+
+
+</html>

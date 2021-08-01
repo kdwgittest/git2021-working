@@ -1,0 +1,50 @@
+<html lang="ko">
+
+<head>
+
+  <Meta charset="utf-8">
+  <style>
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    /*시작태그와 컨탠트 사이의 비포 영역에 스타일을 넣음*/
+    ul>li::before {
+      content: "👀";
+      /*이모지 넣음됨*/
+      /* 이모지: 윈도우키 + ; */
+      margin-right: 0.5rem;
+      color: green;
+    }
+
+    /*끝태그와 컨텐트 사이의 에프터 영역에 스타일을 넣음*/
+    ul>li::after {
+      content: '✌';
+      margin-left: 0.5rem;
+    }
+
+    .txt::before {
+      content: "✡";
+      margin-right: 0.5rem;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>할 일</h1>
+  <ul>
+    <li>HTML 태그 공부하기</li>
+    <li>css 연습하기</li>
+  </ul>
+  <div class="txt"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis id provident dolor. Reiciendis,
+    quia id tenetur magnam doloribus saepe! Porro voluptates esse veniam modi fugit culpa iure adipisci facere nemo.
+  </div>
+
+</body>
+
+
+
+
+</html>
