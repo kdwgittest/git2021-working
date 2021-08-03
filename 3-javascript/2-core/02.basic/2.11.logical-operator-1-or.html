@@ -1,0 +1,38 @@
+<html>
+
+<body>
+  <script>
+
+
+    // short-circuit evaluation, lazy evaluation
+    // 왼쪽항만 true/false 인지 평가한다. 
+
+    // 일반적인 프로그래밍 
+    console.log(false || false);  // f
+    console.log(true || false);  //t
+    console.log(false || true);  //t
+    console.log(true || false);  //t 
+
+
+    // 왼쪽항이 true 로 판별되면 왼쪽항을 반환
+    // 왼쪽항이 false 로 판별되면 오른쪽항을 반환 
+    console.log("" || 0);    // 0
+    let a = "" || 0;
+    console.log(a);          //0
+
+    console.log(1 || "a");  // 1
+    console.log(undefined || "b") // b 
+
+
+    let c;
+    // 일반적인 조건문 
+    if (typeof c == "undefined") {
+      alert('c의 값은 할당되지 않음');
+    }
+    // short-circuit 응용
+    c || alert('c의 값은 할당되지 않음');
+
+  </script>
+</body>
+
+</html>

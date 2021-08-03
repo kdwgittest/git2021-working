@@ -1,0 +1,36 @@
+<html>
+
+<body>
+  <script>
+
+
+
+
+    console.log(false && false);
+    console.log(true && false);
+    console.log(false && true);
+    console.log(true && true);
+
+    // 왼쪽항이 true 로 판별되면 오른쪽항을 반환
+    // 왼쪽항이 false 로 판별되면 왼쪽항을 반환 
+
+
+
+    console.log(1 && "a"); // a
+
+    let b = 1 && "a";
+    console.log(b);      // a 
+
+
+    let c = 1;
+    if (typeof c !== "undefined" && c !== null && c !== 0 && 0) {
+      alert('값이 설정되어 있군요');
+    }
+
+    c && alert('값이 설정되엉 있군요')
+
+
+  </script>
+</body>
+
+</html>
