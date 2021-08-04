@@ -1,0 +1,30 @@
+<html>
+
+<body>
+  <script>
+
+    let sum = 0;
+
+
+
+    // +"" : 숫자로 
+    while (true) {
+      let value = +prompt("숫자를 입력하세요.", '');
+
+
+
+      // !value -> value값이  false이면 (NaN, 0)
+      if (!value) break;
+
+      sum += value;
+
+
+    }
+
+    alert('합계: ' + sum);
+
+  </script>
+
+</body>
+
+</html>
