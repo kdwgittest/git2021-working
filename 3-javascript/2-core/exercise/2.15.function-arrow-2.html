@@ -1,0 +1,23 @@
+<html>
+
+<body>
+  <script>
+
+
+    let ask = (question, yes, no) => {
+      if (confirm(question))
+        yes()
+
+      else no();
+
+      return ask;
+
+    }
+
+
+    ask("동의하십니까?", () => alert("네 동의합니다."), () => alert("동의하지 않습니다."));
+
+  </script>
+</body>
+
+</html>
