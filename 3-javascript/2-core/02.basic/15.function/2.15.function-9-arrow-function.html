@@ -1,0 +1,45 @@
+<html>
+
+<body>
+  <script>
+    // 함수 선언식 
+    function sum(a, b) {
+      return a + b;
+    }
+
+
+    sum(1, 2);
+
+
+  </script>
+
+  <script>
+    // 함수 표현식
+    let sum = function (a, b) {
+      return a + b;
+    }
+
+    sum(1, 2);
+
+  </script>
+
+  <script>
+    // 화살표 함수 
+    // 현재는 아주 많이 쓰이는 함수선언 표현식 
+
+    // let 변수 = (매개변수) => {...구문 }
+    // {...} 중괄호 구문이 생략되면 해당구문의 값이  retrun 값이 됨. 
+    let sum = (a, b) => a || b;
+    // 중괄호 이용해서 리턴사용 
+    let sum2 = (a, b) => {
+      //...
+      //...
+      return a + b;
+    };
+
+
+  </script>
+
+</body>
+
+</html>
