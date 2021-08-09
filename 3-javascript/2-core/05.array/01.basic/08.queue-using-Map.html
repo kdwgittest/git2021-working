@@ -1,0 +1,62 @@
+<html>
+
+<body>
+  <script>
+
+    // 큐는 데이터를 순차적으로 밀어넣고 들어간 순서대로 꺼내야함
+    // 선입선출 
+    // 큐에 요소 추가: enqueue
+    // 큐에 요소 추출: dequeue                   
+
+    // 맵(Map): key-value 형태의 자료구조, 키를 문자말고 다른것 가능   
+    // 연관배열(associative array) 형식 중 하나이다. 
+    let queue = new Map();
+    let head = 0;  // 가장앞쪽 key를 저장하는 변수 
+    let tail = 0;    // 가장뒤쪽 key를 저장하는 변수 
+
+    // queue에 요소(item) 추가(enqueue), tail 위치에 넣음  
+    // object의  tail값의 속성을 만듬 "0","1","2"
+    queue.set(tail++, "hong");   //맵.set(키,값)
+    console.log(queue);
+    queue(tail++, "jhon");
+    console.log(queue);
+    queue(tail++, "donald");
+    console.log(queue);
+    queue(tail++, "kim");
+    console.log(queue);
+    queue(tail++, "lee");
+    console.log(queue);
+
+
+    // queue 에서 요소 꺼내기(dequeue), 
+    // head위치에서 조회하고 key 삭제     
+    console.log(queue.get(head));    // map.get(key) 0, hong
+    queue.delete(head++);        // 0 , queue.delete(0);
+    console.log(queue);
+
+    console.log(queue.get(head));   //1
+    queue.delete(head++);        //1 , delete queue["1"]
+    console.log(queue);
+
+    console.log(queue.get(head));  //2
+    queue.delete(head++);        //2
+    console.log(queue);
+
+    console.log(queue.get(head));
+    queue.delete(head++);
+    console.log(queue);
+
+    console.log(queue.get(head));
+    queue.delete(head++);
+    console.log(queue);
+
+
+    // 내부적으로 key 가 숫자로 변환 가능하니
+    // 정렬알고리즘이 실행되나? 
+
+    console.log();    // 큐 크기 구하기  
+
+  </script>
+</body>
+
+</html>

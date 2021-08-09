@@ -1,0 +1,57 @@
+<html>
+
+<body>
+  <script>
+
+    let user = {
+      name: "John",
+      age: 30,
+      // 속성이 함수일때 단축표기법 
+      sayHi() {
+        alert("안녕하세요!");
+      }
+    };
+
+    user.sayHi();
+
+  </script>
+
+  <script>
+
+    let user = {
+      name: "John",
+      age: 30,
+
+      phone: {
+        home: "56413212313",
+        company: "4321321348546",
+        // ...
+      }
+
+
+    };
+
+  </script>
+
+  <script>
+
+
+    let user = {
+      name: "John",
+      age: 30
+    };
+
+    user.sayHi = function () {
+      alert('dkssud');
+    };
+
+    user.sayHi = function () {
+      alert('dkssud');
+    };
+
+
+  </script>
+
+</body>
+
+</html>

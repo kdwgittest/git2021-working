@@ -1,0 +1,52 @@
+<html>
+
+<body>
+  <script>
+
+
+    function sumInput() {
+
+      let arr = [];
+
+
+      while (true) {
+        let input = prompt("숫자 입력해주세요");
+        //NaN, "", null 뜨면 반복문 나감 
+        // 입력받은 문자를 숫자로 변환했을때 NaN 인지 체크
+        if (isNaN(+input) || input == "" || input == null)
+          break;
+
+        arr.push(+input);
+      }
+
+      let sum = 0;
+      for (let elm of arr) {
+        sum += elm;
+      }
+
+      return sum;
+
+    }
+
+    console.log(sumInput());
+
+
+
+
+
+  //  let sum = [];
+   // function sum(arr) {
+
+   //   var i;
+    //  for (var i = 0; i < sum.length; i++) {
+    //    prompt('숫자를 입력해주세요. ', 0);
+     //   result += arr[i];
+   //   }
+
+
+  //  }
+
+  </script>
+</body>
+
+</html>

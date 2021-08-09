@@ -5,9 +5,14 @@
     let user = { name: "John", age: 30 };
 
 
+    for (let prop in user) {
+      return false;
+    }
 
-    alert(!"age" in user); // false 
-    alert(!"blabla" in user); // false 
+    return true;
+
+  //  alert(!"age" in user); // false 
+   // alert(!"blabla" in user); // false 
 
 
 
