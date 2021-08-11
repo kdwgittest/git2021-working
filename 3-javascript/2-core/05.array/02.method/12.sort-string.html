@@ -1,0 +1,31 @@
+<html>
+
+<body>
+  <script>
+
+    let arr = ['Österreich', 'Andorra', 'Vietnam'];
+
+
+    arr.sort((a, b) => {
+      // b가 먼저옴, 작은값을 앞쪽에 오게함 
+      // 앞의것이 크면 양수 
+      if (a > b) return 1;
+      // 서로 변경하지 않음 
+      if (a == b) return 0;
+      // a가 먼저옴, 큰값을 뒤쪽에 오게함 
+      // 앞의것이 작으면 음수
+      if (a < b) return -1;
+    });
+
+
+
+
+    arr.sort((a, b) => a.localeCompare(b));
+
+    alert(arr);  // 
+
+
+  </script>
+</body>
+
+</html>

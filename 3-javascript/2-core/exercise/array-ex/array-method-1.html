@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <script>
+      // 케밥케이스 문자열을 카멜케이스 문자열로
+      function camelize(str) {
+        // - 구분자로 문자열 나눠서 배열화
+        let strArr = str.split("-");
+        console.log(strArr);
+
+      return strArr.reduce((acc, item, index) =>
+        acc + (index == 0 ? item[0].toUppercase() + item.substring()), "");
+      }
+
+      console.log(camelize("background-color"));
+      console.log(camelize("list-style-image"));
+      console.log(camelize("-webkit-transition"));
+    </script>
+  </body>
+</html>

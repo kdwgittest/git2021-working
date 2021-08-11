@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <script>
+      function unique(arr) {
+        return [...new Set(arr)];
+      }
+
+      let strings = [
+        "Hare",
+        "Krishna",
+        "Hare",
+        "Krishna",
+        "Krishna",
+        "Krishna",
+        "Hare",
+        "Hare",
+        ":-O",
+      ];
+
+      //중복이 없이 저장가능함
+      //     let set = new Set();
+      //    set.add("lee");
+
+      console.log(unique(strings)); // Hare
+    </script>
+  </body>
+</html>
