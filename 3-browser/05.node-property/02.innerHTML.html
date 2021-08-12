@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <script>
+      // 요소내부
+      console.log(document.body.innerHTML); //내용읽기
+
+      // setTimeout(실행할함수, 시간(ms))
+      setTimeout(() => {
+        // 원래의 body 내부에 html 태그를 추가함
+        document.body.innerHTML += "<div>태그임 </div>"; //태그추가
+      }, 2000);
+    </script>
+  </body>
+</html>

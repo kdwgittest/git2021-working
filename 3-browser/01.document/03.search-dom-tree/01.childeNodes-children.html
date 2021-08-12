@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <div>시작</div>
+
+    <ul>
+      <li>
+        <b>항목</b>
+      </li>
+    </ul>
+
+    <!-- 스크립트 태그 가장 하단에 -->
+    <script>
+      // body 밑에 있는 하위노드들을 탐색
+      for (let node of document.body.childNodes) {
+        console.log(node);
+      }
+
+      console.log(document.body.firstChild);
+      console.log(document.body.lastChild);
+    </script>
+  </body>
+</html>
