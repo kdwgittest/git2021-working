@@ -1,0 +1,42 @@
+<html>
+  <bod>
+    <script>
+      // id == 6 인 데이터를 조회
+      // 이진탐색 0(logn) -> 항이8개면 평균적으로 3번탐색 2^3 == 8 이기때문
+      // 4 -> 6    중간의 중간의... 위아래
+
+      let arr = [
+        { id: 1, name: "kim" },
+        { id: 2, name: "lee" },
+        { id: 3, name: "park" },
+        // 중간에 데이터 집어넣어야 한다면 arr.splice(3,0, {...})
+        // 데이터가 하나씩 뒤로 밀림
+        { id: 4, name: "john" },
+        { id: 5, name: "donald" },
+        { id: 6, name: "pete" },
+        { id: 7, name: "kang" },
+      ];
+
+      // associative array(연관배열)
+      // 특정값으로 데이터를 검색해야한다면 연관배열 형태의 데이터구조
+      let map = {
+        1: { id: 1, name: "kim" },
+        2: { id: 2, name: "lee" },
+        3: { id: 3, name: "park" },
+        //  4:{ id: 4, name:'hong'}, 중간에 집어넣어야한다면, map[4] = {...}
+        // 속성값은 순차적으로 들어가있지않음, 특정위치에 바로 넣을 수 있음
+        4: { id: 4, name: "john" },
+        5: { id: 5, name: "donald" },
+        6: { id: 6, name: "pete" },
+        7: { id: 7, name: "kang" },
+      };
+
+      map[6]; //  {id:6, name: "pete"}
+
+      map[4] = { id: 4, name: "hong" };
+
+      // id, 게시글번호, 고객번호, 고객연락처를 탐색해야할때
+      // 원래 데이터구조를 연관배열로 만듬
+    </script>
+  </bod>
+</html>

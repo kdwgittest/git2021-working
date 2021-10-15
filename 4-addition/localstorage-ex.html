@@ -1,0 +1,36 @@
+<html>
+  <body>
+    <textarea
+      style="width: 500px; height: 90px"
+      id="area"
+      placeholder="여기다 쓰시오"
+    >
+    </textarea>
+
+    <button class="localStorage.removeItem('area')">clear</button>
+
+    <script>
+      // 변수 셋팅
+      const txt = document.querySelector("textarea");
+      const btn = document.querySelector("button");
+      const storageKey = "memo";
+
+      // 텍스트에어리어에 입력할떄마다 이벤트 처리
+      txt.addEventListener("keyup", () => {
+        console.log(txt.value);
+        // 로컬스토리에 저장
+        localStorage.setItem("memo", txt.value);
+      });
+
+      // clear 버튼을 클릭했을떄 삭제
+      btn.addEventListener("click", () => {
+        txt.value = "";
+        localStorage.removeItem("memo");
+      });
+
+      // 스크립트 실행될때 스토리지 값 가져오기
+      // 페이지 로딩이 됬을떄(스크립트가 가장 하단에 있다는 전제하에)
+      txt.value = localStorage.getItem(storageKey);
+    </script>
+  </body>
+</html>

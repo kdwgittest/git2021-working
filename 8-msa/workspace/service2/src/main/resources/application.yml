@@ -1,0 +1,33 @@
+server:
+  port: 6060
+
+spring:
+  application:
+    name: service-2
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost         
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+---
+spring:
+  profiles: dev 
+eureka:
+  client:
+    service-url: 
+      defaultZone: http://ec2-52-78-57-152.ap-northeast-2.compute.amazonaws.com:8761/eureka/
+  instance: 
+     hostname: ec2-3-36-117-144.ap-northeast-2.compute.amazonaws.com
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"      
+    

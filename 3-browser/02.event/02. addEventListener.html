@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <button id="elem">클릭해 주세요.</button>
+
+    <script>
+      const elem = document.querySelector("#elem");
+
+      //
+      // 요소.addEventListener("이벤트명", 이벤트 처리함수)
+      // 익명함수 스타일
+      elem.addEventListener("click", () => {
+        alert("클릭");
+      });
+
+      // 함수별도작성 및 callback 으로 전달
+      elem.addEventListener("click", click);
+
+      function click() {
+        alert("클릭");
+      }
+    </script>
+  </body>
+</html>
